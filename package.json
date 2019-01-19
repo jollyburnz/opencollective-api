@@ -190,6 +190,7 @@
     "git:clean": "./scripts/git_clean.sh",
     "deploy:staging": "./scripts/pre-deploy.sh staging && bash -x scripts/deploy.sh staging",
     "deploy:production": "./scripts/pre-deploy.sh production && bash -x scripts/deploy.sh production",
+    "deploy:testcopy": "./scripts/pre-deploy.sh testcopy && bash -x scripts/deploy.sh testcopy",
     "report": "node scripts/send_email_report_cli.js",
     "report:weekly": "node cron/weekly/slack-report.js",
     "report:monthly": "babel-node cron/monthly/slack-report.js",

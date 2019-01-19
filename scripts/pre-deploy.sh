@@ -34,6 +34,8 @@ if [ "$1" == "staging" ]; then
   DEPLOY_ORIGIN_URL="https://git.heroku.com/opencollective-staging-api.git"
 elif [ "$1" == "production" ]; then
   DEPLOY_ORIGIN_URL="https://git.heroku.com/opencollective-prod-api.git"
+elif [ "$1" == "testcopy" ]; then
+  DEPLOY_ORIGIN_URL="https://git.heroku.com/open-testits.git"
 else
   echo "Unknwown remote $1"
   exit 1

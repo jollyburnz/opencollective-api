@@ -22,14 +22,14 @@ if [ "$NODE_ENV" = "circleci" ]; then
   npm run db:setup
   npm run db:migrate
 else
-  if psql -lqt | cut -d \| -f 1 | grep -qw opencollective_dvl; then
-    echo "✓ opencollective_dvl exists"
+  if psql -lqt | cut -d \| -f 1 | grep -qw d4qo4nhnf5jad2; then
+    echo "✓ d4qo4nhnf5jad2 exists"
   else
-    echo "- restoring opencollective_dvl";
-    ./scripts/db_restore.sh -d opencollective_dvl -f test/dbdumps/opencollective_dvl.pgsql
+    echo "- restoring d4qo4nhnf5jad2";
+    ./scripts/db_restore.sh -d d4qo4nhnf5jad2 -f test/dbdumps/opencollective_dvl.pgsql
   fi
   echo "- running migration if any"
-  PG_DATABASE=opencollective_dvl npm run db:migrate
+  PG_DATABASE=d4qo4nhnf5jad2 npm run db:migrate
 fi
 
 echo ""

@@ -18,6 +18,11 @@ then
   branch_name="production"
   remote="https://git.heroku.com/opencollective-prod-api.git"
   from_branch="staging"
+elif [ $env = "testcopy" ]
+then
+  branch_name="testcopy"
+  remote="-f https://git.heroku.com/open-testits.git"
+  from_branch="testcopy"
 else
   echo "Unknown env: $env, only staging and production are valid"
   exit
