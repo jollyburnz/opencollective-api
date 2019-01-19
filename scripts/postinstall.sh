@@ -3,7 +3,8 @@
 set -e
 
 # Only run migrations automatically on staging and production
-if [ "$SEQUELIZE_ENV" = "staging" ] || [ "$SEQUELIZE_ENV" = "production" ]; then
+echo $SEQUELIZE_ENV;
+if [ "$SEQUELIZE_ENV" = "staging" ] || [ "$SEQUELIZE_ENV" = "production" ] || [ "$SEQUELIZE_ENV" = "testcopy" ]; then
   echo "- running db:migrate on $SEQUELIZE_ENV environment"
   npm run db:migrate
   exit $?; # exit with return code of previous command
