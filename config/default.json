@@ -1,6 +1,6 @@
 {
   "database": {
-    "url": "postgres://opencollective@127.0.0.1:5432/opencollective_dvl",
+    "url": "postgres://zxcaxtjdgdcuku:7e45d7e9457cc5e544c24d63986ec9eb1b7b567eaa8d89b16f05798b8e1b2e0b@ec2-54-243-223-245.compute-1.amazonaws.com:5432/d4qo4nhnf5jad2",
     "options": {
       "pool": {
         "min": 5,

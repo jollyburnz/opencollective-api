@@ -56,6 +56,7 @@ export function getDBConf(name) {
     const dbConfigOverride = get(config, [name, 'override'], {});
     dbConfig = { ...dbConfig, ...dbConfigOverride };
   }
+  console.log(dbConfig);
   return dbConfig;
 }
 
