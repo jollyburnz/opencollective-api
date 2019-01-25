@@ -31,7 +31,7 @@ esac
 shift # past argument or value
 done
 
-LOCALDBUSER=${LOCALDBUSER:-"opencollective"}
+LOCALDBUSER=${LOCALDBUSER:-"zxcaxtjdgdcuku"}
 
 echo "LOCALDBUSER=$LOCALDBUSER"
 echo "LOCALDBNAME=$LOCALDBNAME"

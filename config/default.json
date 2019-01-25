@@ -8,7 +8,10 @@
         "acquire": 1200000
       },
       "logging": false,
-      "operatorsAliases": false
+      "operatorsAliases": false,
+      "dialectOptions": {
+        "ssl": true
+      }
     }
   },
   "maintenancedb": {
